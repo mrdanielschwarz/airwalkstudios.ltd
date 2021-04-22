@@ -1,0 +1,416 @@
+<!-- W3C -->
+<!-- Browser -->
+<!-- Lighthouse -->
+<!-- VoiceOver -->
+
+<!-- Schema -->
+<!-- Htaccess -->
+<!-- One.com -->
+
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<meta name="description" content="Parent to UX Tricks & Nomad Noms.">
+
+	<meta name="theme-color" content="rgb(35, 41, 47)">
+
+	<meta name="twitter:card" content="summary_large_image">
+
+
+
+	<meta property="og:title" content="Airwalk Studios Ltd">
+	<meta property="og:description" content="Parent to UX Tricks & Nomad Noms.">
+	<meta property="og:url" content="https://airwalkstudios.ltd/">
+	<meta property="og:image" content="https://airwalkstudios.ltd/image-1200x630.png">
+
+
+
+	<link rel="manifest" href="/manifest.webmanifest">
+
+	<link rel="icon" href="/icon-512x512.png" sizes="512x512" type="image/png">
+
+	<link rel="apple-touch-icon" href="/icon-192x192.png" sizes="192x192" type="image/png">
+
+	<link rel="canonical" href="https://airwalkstudios.ltd/">
+
+
+
+	<title>Airwalk Studios Ltd</title>
+
+	<style>
+        
+		:root {
+
+			--c-1: 250 70% 100%;
+			--c-13: 250 70% 52%;
+			--c-23: 250 70% 12%;
+			--c-22: 250 70% 16%;
+			--c-25: 250 70% 4%;
+            
+			--c-n: 350 70% 50%;
+
+			--w-1x: calc(7.5vw + 0.8rem);
+			--w-05x: calc(var(--w-1x) * 0.5);
+
+		}
+
+		::selection {
+			color: hsl(var(--c-1));
+			background: hsl(var(--c-23));
+		}
+
+		@font-face {
+			font-weight: 700;
+			font-style: normal;
+			font-display: swap;
+			font-family: "Fira Sans";
+			src: url("font-700.woff2") format("woff2");
+		}
+
+		@font-face {
+			font-weight: 900;
+			font-style: normal;
+			font-display: swap;
+			font-family: "Fira Sans";
+			src: url("font-900.woff2") format("woff2");
+		}
+
+        @keyframes beat {
+            10% {
+                transform: scale(1.02);
+            }
+
+            20% {
+                transform: scale(0.98);
+            }
+
+            30% {
+                transform: scale(1.0);
+            }
+
+            100% {
+                transform: scale(1.0);
+            }
+        }
+
+		@keyframes float {
+			0% {
+				transform: translate(2%, -10%) rotate(-1deg);
+			}
+
+			100% {
+				transform: translate(-2%, 5%) rotate(3deg);
+			}
+		}
+
+		@keyframes float-nth-child {
+			0% {
+				transform: translate(0%, -5%) rotate(-1deg);
+			}
+
+			100% {
+				transform: translate(2%, 10%) rotate(3deg);
+			}
+		}
+        
+        * {
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        *:focus {
+            outline: none;
+        }
+
+        *:focus-visible {
+            animation: beat 1000ms infinite;
+        }
+
+		html {
+			font-size: 62.5%;
+		}
+
+		body {
+			font-weight: 700;
+			line-height: 1.9;
+			font-size: 1.9rem;
+			text-align: center;
+			padding: var(--w-1x);
+			color: hsl(var(--c-1));
+			background: hsl(var(--c-23));
+			font-family: "Fira Sans", system-ui, Helvetica, sans-serif;
+		}
+
+
+
+
+
+
+		header h1 {
+			font-weight: 900;
+			line-height: 1.4;
+			font-size: 5.798rem;
+			margin: -2rem auto 0;
+		}
+
+		header p {
+			padding: var(--w-1x) 0;
+			margin: -3.2rem auto -1.2rem;
+		}
+
+		@media(max-width: 479px) {
+			header h1 {
+				font-size: 4.0586rem;
+				margin: -1.3rem auto 0;
+			}
+
+			header p {
+				margin: -2.6rem auto -1.2rem;
+			}
+		}
+
+
+		@media(max-width: 639px) {
+
+			header p {
+				max-width: 24.5rem;
+			}
+		}
+
+		main {
+			display: inline-grid;
+			grid-gap: var(--w-05x);
+		}
+
+		main section {
+			border-style: solid;
+			padding: var(--w-1x);
+			transform: rotate(-5deg);
+			background: hsl(var(--c-22));
+			border-width: calc(var(--w-1x) * 2 * 0.1);
+			border-radius: calc(var(--w-1x) * 2 * 0.3);
+		}
+
+		main section div {
+			transform: rotate(5deg);
+		}
+
+		main section div img {
+			width: 6.4rem;
+			height: 6.4rem;
+			display: block;
+			margin: 0 auto 2.3rem;
+		}
+
+
+
+		main section div h2 {
+			font-weight: 900;
+			line-height: 1.8;
+			font-size: 2.375rem;
+			margin: -0.4rem auto -1.1rem;
+		}
+
+		main section div a {
+			font-weight: 700;
+			height: 5.8rem;
+			margin-top: 0.1rem;
+			place-items: center;
+			place-content: center;
+			text-decoration: none;
+			padding: 0 calc(5.8rem * 0.5);
+            
+			box-shadow: 0 0 var(--w-05x) hsl(var(--c-25) / 30%);
+            
+			border-radius: calc(5.8rem * 0.3);
+			font-size: 1.6rem;
+			display: inline-flex;
+			color: hsl(var(--c-1));
+
+
+		}
+
+
+		main section div a:hover {
+			filter: brightness(110%);
+		}
+        
+        h1 span {
+			display: inline-block;
+			animation-name: float;
+			letter-spacing: 0.058em;
+			animation-duration: 2.2s;
+			transform-origin: 50% 100%;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			h1 span {
+				animation: none !important;
+			}
+		}
+
+		h1 span:nth-child(2n) {
+			animation-name: float-nth-child;
+		}
+
+		h1 span:nth-of-type(1) {
+			animation-delay: calc(1 * -0.5s);
+		}
+
+		h1 span:nth-of-type(2) {
+			animation-delay: calc(2 * -0.5s);
+		}
+
+		h1 span:nth-of-type(3) {
+			animation-delay: calc(3 * -0.5s);
+		}
+
+		h1 span:nth-of-type(4) {
+			animation-delay: calc(4 * -0.5s);
+		}
+
+		h1 span:nth-of-type(5) {
+			animation-delay: calc(5 * -0.5s);
+		}
+
+		h1 span:nth-of-type(6) {
+			animation-delay: calc(6 * -0.5s);
+		}
+
+		h1 span:nth-of-type(7) {
+			animation-delay: calc(7 * -0.5s);
+		}
+
+		h1 span:nth-of-type(8) {
+			animation-delay: calc(8 * -0.5s);
+		}
+
+		h1 span:nth-of-type(9) {
+			animation-delay: calc(9 * -0.5s);
+		}
+
+		h1 span:nth-of-type(10) {
+			animation-delay: calc(10 * -0.5s);
+		}
+
+		h1 span:nth-of-type(11) {
+			animation-delay: calc(11 * -0.5s);
+		}
+
+		h1 span:nth-of-type(12) {
+			animation-delay: calc(12 * -0.5s);
+		}
+
+		h1 span:nth-of-type(13) {
+			animation-delay: calc(13 * -0.5s);
+		}
+
+		h1 span:nth-of-type(14) {
+			animation-delay: calc(14 * -0.5s);
+		}
+
+		h1 span:nth-of-type(15) {
+			animation-delay: calc(15 * -0.5s);
+		}
+
+		h1 span:nth-of-type(16) {
+			animation-delay: calc(16 * -0.5s);
+		}
+
+		h1 span:nth-of-type(17) {
+			animation-delay: calc(17 * -0.5s);
+		}
+
+	</style>
+
+	<script>navigator.serviceWorker.register("/sw.js");</script>
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1><span>A</span><span>i</span><span>r</span><span>w</span><span>a</span><span>l</span><span>k</span><br><span>S</span><span>t</span><span>u</span><span>d</span><span>i</span><span>o</span><span>s</span>&nbsp;<span>L</span><span>t</span><span>d</span></h1>
+
+		<p>Incorporated in the UK. Operated remotely.</p>
+
+	</header>
+
+	<main>
+
+		<section style="border-color:hsl(var(--c-13));">
+			<div>
+
+				<img loading="lazy" alt="UX Tricks" src="https://cdn.shopify.com/s/files/1/2839/3930/t/2/assets/icon-512x512_64x64.png" srcset="https://cdn.shopify.com/s/files/1/2839/3930/t/2/assets/icon-512x512_64x64.png, https://cdn.shopify.com/s/files/1/2839/3930/t/2/assets/icon-512x512_128x128.png 2x">
+
+				<h2>UX Tricks</h2>
+
+				<p>Learn UI & UX</p>
+
+				<a href="https://uxtricks.design/" target="_blank" rel="noopener noreferrer" style="background:hsl(var(--c-13));">Visit website</a>
+
+			</div>
+		</section>
+
+		<section style="border-color:hsl(var(--c-n));">
+			<div>
+
+				<img loading="lazy" alt="Nomad Noms" src="https://cdn.shopify.com/s/files/1/0006/5241/0937/t/2/assets/icon-512x512_64x64.png" srcset="https://cdn.shopify.com/s/files/1/0006/5241/0937/t/2/assets/icon-512x512_64x64.png, https://cdn.shopify.com/s/files/1/0006/5241/0937/t/2/assets/icon-512x512_128x128.png 2x">
+
+				<h2>Nomad Noms</h2>
+
+				<p>Healthy everywhere</p>
+
+				<a href="https://nomadnoms.co/" target="_blank" rel="noopener noreferrer" style="background:hsl(var(--c-n));">Visit website</a>
+
+			</div>
+		</section>
+
+	</main>
+
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+			"mainEntity": {
+				"@type": "Organization",
+				"name": "Airwalk Studios Ltd",
+				"url": "https://airwalkstudios.ltd/",
+				"logo": "https://airwalkstudios.ltd/icon-512x512.png",
+				"description": "Parent of UX Tricks & Nomad Noms.",
+				"foundingDate": "2014-05-04",
+				"foundingLocation": {
+					"@type": "Place",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "London",
+						"addressRegion": "United Kingdom"
+					}
+				},
+				"founder": {
+					"@type": "Person",
+					"name": "Daniel Schwarz",
+					"url": "https://mrdaniels.ch/warz/"
+				}
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
