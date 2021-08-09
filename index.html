@@ -1,15 +1,17 @@
-<!-- W3C -->
-<!-- Browser -->
-<!-- Lighthouse -->
-<!-- VoiceOver -->
+<!-- GSC [o] -->
+<!-- W3C [o] -->
+<!-- Browser [ ] -->
+<!-- Lighthouse [o] -->
+<!-- VoiceOver [ ] -->
 
-<!-- Schema -->
-<!-- Htaccess -->
+
 
 <!doctype html>
 <html lang="en-GB">
 
 <head>
+    
+    
 
 	<meta charset="UTF-8">
 
@@ -18,15 +20,28 @@
 	<meta name="description" content="Parent to UX Tricks & Nomad Noms.">
 
 	<meta name="theme-color" content="rgb(35, 41, 47)">
+	
+	
+	
+    <!-- OG [o] -->
 
-	<meta name="twitter:card" content="summary_large_image">
-
-
+    <meta name="twitter:card" content="summary_large_image">
 
 	<meta property="og:title" content="Airwalk Studios Ltd">
+	
 	<meta property="og:description" content="Parent to UX Tricks & Nomad Noms.">
+	
 	<meta property="og:url" content="https://airwalkstudios.ltd/">
+	
 	<meta property="og:image" content="https://airwalkstudios.ltd/image-1200x630.png">
+
+
+
+	<title>Airwalk Studios Ltd</title>
+	
+	
+
+	<script>navigator.serviceWorker.register("/script-sw.js");</script>
 
 
 
@@ -37,19 +52,19 @@
 	<link rel="apple-touch-icon" href="/icon-192x192.png" sizes="192x192" type="image/png">
 
 	<link rel="canonical" href="https://airwalkstudios.ltd/">
-
-
-
-	<title>Airwalk Studios Ltd</title>
+	
+	
 
 	<style>
+        
+        
         
 		:root {
 
 			--c-1: 250 70% 100%;
 			--c-13: 250 70% 52%;
-			--c-23: 250 70% 12%;
 			--c-22: 250 70% 16%;
+			--c-23: 250 70% 12%;
 			--c-25: 250 70% 4%;
             
 			--c-n: 350 70% 50%;
@@ -63,6 +78,8 @@
 			color: hsl(var(--c-1));
 			background: hsl(var(--c-23));
 		}
+        
+        
 
 		@font-face {
 			font-weight: 700;
@@ -118,6 +135,8 @@
 			}
 		}
         
+        
+        
         * {
             margin: 0;
             border: none;
@@ -134,6 +153,8 @@
         *:focus-visible {
             animation: beat 1000ms infinite;
         }
+        
+        
 
 		html {
 			font-size: 62.5%;
@@ -149,49 +170,48 @@
 			background: hsl(var(--c-23));
 			font-family: "Fira Sans", system-ui, Helvetica, sans-serif;
 		}
-
-
-
-
-
-
-		header h1 {
+        
+        
+        
+		#header h1 {
 			font-weight: 900;
 			line-height: 1.4;
 			font-size: 5.798rem;
 			margin: -2rem auto 0;
 		}
 
-		header p {
+		#header p {
 			padding: var(--w-1x) 0;
 			margin: -3.2rem auto -1.2rem;
 		}
 
 		@media(max-width: 479px) {
-			header h1 {
+			#header h1 {
 				font-size: 4.0586rem;
 				margin: -1.3rem auto 0;
 			}
 
-			header p {
+			#header p {
 				margin: -2.6rem auto -1.2rem;
 			}
 		}
 
-
 		@media(max-width: 639px) {
 
-			header p {
+			#header p {
 				max-width: 24.5rem;
 			}
+            
 		}
+        
+        
 
-		main {
+		#main {
 			display: inline-grid;
 			grid-gap: var(--w-05x);
 		}
 
-		main section {
+		.main-section {
 			border-style: solid;
 			padding: var(--w-1x);
 			transform: rotate(-5deg);
@@ -200,11 +220,11 @@
 			border-radius: calc(var(--w-1x) * 2 * 0.3);
 		}
 
-		main section div {
+		#main section div {
 			transform: rotate(5deg);
 		}
 
-		main section div img {
+		#main section div img {
 			width: 6.4rem;
 			height: 6.4rem;
             border-radius: 6.4rem;
@@ -212,17 +232,14 @@
 			margin: 0 auto 2.3rem;
 		}
 
-
-
-		main section div h2 {
+		#main section div h2 {
 			font-weight: 900;
 			line-height: 1.8;
 			font-size: 2.375rem;
 			margin: -0.4rem auto 0.8rem;
 		}
         
-
-		main section div a {
+		#main section div a {
 			font-weight: 700;
 			height: 5.8rem;
 			margin-top: 2rem;
@@ -241,10 +258,11 @@
 
 		}
 
-
-		main section div a:hover {
+		#main section div a:hover {
 			filter: brightness(110%);
 		}
+        
+        
         
         h1 span {
 			display: inline-block;
@@ -258,9 +276,11 @@
 		}
 
 		@media (prefers-reduced-motion: reduce) {
+            
 			h1 span {
 				animation: none !important;
 			}
+            
 		}
 
 		h1 span:nth-child(2n) {
@@ -334,16 +354,18 @@
 		h1 span:nth-of-type(17) {
 			animation-delay: calc(17 * -0.5s);
 		}
+        
+        
 
 	</style>
-
-	<script>navigator.serviceWorker.register("/sw.js");</script>
+	
+	
 
 </head>
 
 <body>
 
-	<header>
+	<header id="header">
 
 		<h1><span>A</span><span>i</span><span>r</span><span>w</span><span>a</span><span>l</span><span>k</span><br><span>S</span><span>t</span><span>u</span><span>d</span><span>i</span><span>o</span><span>s</span>&nbsp;<span>L</span><span>t</span><span>d</span></h1>
 
@@ -351,9 +373,9 @@
 
 	</header>
 
-	<main>
+	<main id="main">
 
-		<section style="border-color:hsl(var(--c-13));">
+		<section class="main-section" style="border-color:hsl(var(--c-13));">
 			<div>
 
 				<img loading="lazy" alt="UX Tricks" src="https://cdn.shopify.com/s/files/1/2839/3930/t/2/assets/icon-512x512_64x64.png" srcset="https://cdn.shopify.com/s/files/1/2839/3930/t/2/assets/icon-512x512_64x64.png, https://cdn.shopify.com/s/files/1/2839/3930/t/2/assets/icon-512x512_128x128.png 2x">
@@ -367,7 +389,7 @@
 			</div>
 		</section>
 
-		<section style="border-color:hsl(var(--c-n));">
+		<section class="main-section" style="border-color:hsl(var(--c-n));">
 			<div>
 
 				<img loading="lazy" alt="Nomad Noms" src="https://cdn.shopify.com/s/files/1/0006/5241/0937/t/2/assets/icon-512x512_64x64.png" srcset="https://cdn.shopify.com/s/files/1/0006/5241/0937/t/2/assets/icon-512x512_64x64.png, https://cdn.shopify.com/s/files/1/0006/5241/0937/t/2/assets/icon-512x512_128x128.png 2x">
@@ -382,8 +404,11 @@
 		</section>
 
 	</main>
+	
+	<!-- Schema [ ] -->
 
 	<script type="application/ld+json">
+    
 		{
 			"@context": "http://schema.org",
 			"@type": "WebPage",
